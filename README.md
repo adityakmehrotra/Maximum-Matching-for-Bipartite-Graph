@@ -29,3 +29,6 @@ The input will start with an positive integer, giving the number of instances th
 4 4<br>
 5 4<br>
 5 5
+
+### Sample Output
+
