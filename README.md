@@ -31,6 +31,6 @@ The input will start with an positive integer, giving the number of instances th
 5 5
 
 ### Sample Output
-2 Y
-2 N
+2 Y<br>
+2 N<br>
 4 N
