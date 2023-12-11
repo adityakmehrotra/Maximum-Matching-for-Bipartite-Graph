@@ -45,3 +45,4 @@ The time complexity of the optimal algorithm for determining the maximum matchin
 ### Run the Code
 - Downloard the required files:
 - You can run the `matching.java` file through your IDE/Console.
+- You can use the `Makefile` to build the Java file (`matching.java`) through the compiler and run the algorithm in the Java file (`matching.java`).
