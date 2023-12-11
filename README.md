@@ -36,3 +36,7 @@ The input will start with an positive integer, giving the number of instances th
 4 N
 
 ### Problem Input and Output Description
+The sample input has 3 instances.
+For each instance, your program should output the size of the maximum matching, followed by a space,
+followed by an N if the matching is not perfect and a Y if the matching is perfect. Each output line
+should be terminated by a newline
