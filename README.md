@@ -40,3 +40,4 @@ The sample input has 3 instances.
 For each instance, your program should output the size of the maximum matching, followed by a space, followed by an N if the matching is not perfect and a Y if the matching is perfect. Each output line should be terminated by a newline.
 
 ### Time Complexity
+The time complexity of the optimal algorithm for determining the maximum matching in a bipartite graph is **O(n^2)**, where n is the number of items and W is the capacity.
