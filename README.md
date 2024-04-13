@@ -1,50 +1,107 @@
 # Maximum-Matching-for-Bipartite-Graph
-Implementation of an algorithm to determine the maximum matching in a bipartite graph and if that matching is perfect (all nodes are matched).
+This Java project implements an algorithm to find the maximum matching in a bipartite graph and determines whether the matching is perfect (all nodes are matched). The algorithm is optimized for both time and space efficiency.
 
-## Optimal Algorithm for determining the Maximum Matching in a Bipartite Graph
+## Project Overview
+
+The algorithm takes multiple sets of bipartite graphs as input and outputs the size of the maximum matching for each set, along with a flag indicating whether the matching is perfect.
 
 ### Problem Description
-The input will start with an positive integer, giving the number of instances that follow. For each instance, there will be 3 positive integers m, n, and q. Numbers m and n are the number of nodes in node set A and node set B. Number q is the number of edges in the bipartite graph. For each edge, there will be 2 more positive integers i, and j representing an edge between node 1 ≤ i ≤ m in A and node 1 ≤ j ≤ n in B.
 
-### Sample Input
-3<br>
-2 2 4<br>
-1 1<br>
-1 2<br>
-2 1<br>
-2 2<br>
-2 3 4<br>
-2 3<br>
-2 1<br>
-1 2<br>
-2 2<br>
-5 5 10<br>
-1 1<br>
-1 3<br>
-2 1<br>
-2 2<br>
-2 3<br>
-2 4<br>
-3 4<br>
-4 4<br>
-5 4<br>
-5 5
+Each input instance describes a bipartite graph with two sets of nodes (A and B) and edges connecting nodes across these sets.
 
-### Sample Output
-2 Y<br>
-2 N<br>
-4 N
+#### Input Format
 
-### Problem Input and Output Description
-The sample input has 3 instances.
-For each instance, your program should output the size of the maximum matching, followed by a space, followed by an N if the matching is not perfect and a Y if the matching is perfect. Each output line should be terminated by a newline.
+- First line: An integer `N`, the number of graph instances.
+- For each instance:
+  - First line: Three integers `m`, `n`, `q` representing the number of nodes in sets A and B, and the number of edges, respectively.
+  - Next `q` lines: Each line contains two integers `i` and `j` which denotes an edge from node `i` in set A to node `j` in set B.
+
+#### Sample Input
+  ```markdown
+  3
+  2 2 4
+  1 1
+  1 2
+  2 1
+  2 2
+  2 3 4
+  2 3
+  2 1
+  1 2
+  2 2
+  5 5 10
+  1 1
+  1 3
+  2 1
+  2 2
+  2 3
+  2 4
+  3 4
+  4 4
+  5 4
+  5 5
+  ```
+
+#### Output Format
+For each instance, output the size of the maximum matching followed by `Y` if the matching is perfect and `N` otherwise.
+
+#### Sample Output
+  ```markdown
+  2 Y
+  2 N
+  4 N
+  ```
+
 
 ### Time Complexity
-The time complexity of the optimal algorithm for determining the maximum matching in a bipartite graph is **O(n * E)**, where n is the number of nodes and E is the number of edges.
 
-### Run the Code
-- Downloard the required files:
-  - `matching.java`: Java file with the algorithm that determines the maximum matching in a bipartite graph optimally in terms of time and space.
-  - `Makefile`: Makefile to build the Java file (`matching.java`) through the compiler and run the algorithm in the Java file (`matching.java`).
-- You can run the `matching.java` file through your IDE/Console.
-- You can use the `Makefile` to build the Java file (`matching.java`) through the compiler and run the algorithm in the Java file (`matching.java`).
+The implemented algorithm runs in `O(n * E)` time, where `n` is the number of nodes and `E` is the number of edges.
+
+## Getting Started
+
+### Prerequisites
+
+- Java JDK 8 or later.
+
+### Setup and Execution
+
+#### Running Locally
+
+1. **Clone the Repository:**
+  ``` markdown
+  git clone https://github.com/your-username/Maximum-Matching-for-Bipartite-Graph.git
+  cd Maximum-Matching-for-Bipartite-Graph
+  ```
+
+2. **Compile the Code:**
+  ```markdown
+  javac matching.java
+  ```
+
+3. **Run the Program:**
+  ```markdown
+  java matching
+  ```
+
+You can then input the number of instances and each graph's details as specified in the input format.
+
+#### Using Makefile
+
+If a `Makefile` is provided, simply run:
+  ```markdown
+  make
+  ```
+
+This command compiles and runs the `matching.java` file.
+
+## Contributing
+
+Contributions to this project are welcome. To contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
+### Last Updated: 04/13/2024
