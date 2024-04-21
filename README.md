@@ -104,4 +104,5 @@ Contributions to this project are welcome. To contribute:
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
 
-### Last Updated: 04/13/2024
+### Last Updated
+04/13/2024
